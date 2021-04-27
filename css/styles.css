@@ -18,3 +18,6 @@
   src: url('web-fonts/Montserrat/Montserrat-Light.otf');
   font-weight: lighter;
 }
+h1{
+  font-family: PierSans;
+}
