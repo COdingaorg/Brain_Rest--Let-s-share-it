@@ -82,4 +82,5 @@ a.nav-link:hover {
 .card-body{
     height: 10%;
     border-radius: 5%;
+    margin-bottom: 10%;
 }
