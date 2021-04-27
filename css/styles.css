@@ -1,0 +1,20 @@
+@font-face {
+  font-family: PierSans;
+  src: url('web-fonts/PierSans/PierSans-Bold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: Nexa;
+  src: url('web-fonts/Nexa/Nexa-Light.otf');
+  font-weight: lighter;
+}
+@font-face {
+  font-family: Monteserrat;
+  src: url('web-fonts/Montserrat/Montserrat-Medium.otf');
+  font-weight: medium;
+}
+@font-face {
+  font-family: Monteserrat;
+  src: url('web-fonts/Montserrat/Montserrat-Light.otf');
+  font-weight: lighter;
+}
