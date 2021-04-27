@@ -69,7 +69,7 @@ a.nav-link:hover{
 #titleCont{
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px 3px 5px grey;
+  box-shadow: 1px 3px 5px gray;
 }
 #commContent{
   background-color: rgba(253, 169, 81, .2);
@@ -154,14 +154,36 @@ nav>img:hover{
   top: 20vh;
   border: 1px solid white;
   border-radius: 0 10px 10px 0;
-  padding: 2%;
+  padding: 1%;
   box-shadow: 0px 3px 5px gray;
   background-color: rgba(255, 255, 255, .7);
   backdrop-filter: blur(5px);
   font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
 }
 #sidebar img{
-  width:20%;
+  width: 15%;
+}
+#sidebar a{
+  color:rgb(82, 41, 87);
+  text-decoration-line: none;
+  border-radius: 5px;
+  border: 1px solid white;
+  box-shadow: 1px 3px 5px gray;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2%;
+}
+#sidebar li{
+  margin: 10px;
+  list-style-type: disc;
+}
+#sidebar a:hover{
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 3%;
+  border-radius: 5px;
+  border: 1px solid white;
+  box-shadow: 1px 3px 5px gray;
 }
 #sidebar span{
   font-size: 1.3em;
@@ -177,4 +199,54 @@ nav>img:hover{
   top: 0vh;
   position: fixed;
   z-index: -1;
+}
+/*Styling the sign up page*/
+#signupCont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#signup{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/unwinding.jpg');
+  width: 50%;
+  padding: 30px;
+  border-radius: 8px;
+}
+#rightDesc{
+  text-align: right;
+  color: white;
+  border-left: 2px solid white;
+  margin-left: 40px;
+}
+input{
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+#signup button{
+  width: 80px;
+  border-radius: 5px;
+}
+
+#leftDesc{
+  background-color: rgba(255, 255, 255, .7);
+  padding: 3%;
+  border-radius: 5px;
+  border: 1px solid white;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#rightDesc input{
+  background-color: rgba(255, 255, 255, .7);
+  padding: 1%;
+  border-radius: 5px;
+  border: 1px solid white;
+  backdrop-filter: blur(4px);
+  border-left:1px solid white;
 }
