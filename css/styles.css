@@ -38,7 +38,7 @@ hr{
 }
 h1{
   font-family: PierSans;
-  padding: 1%;
+  padding-top: 2%;
 }
 p{
   font-family: Monteserrat;
@@ -66,6 +66,11 @@ a.nav-link:hover{
   color: white;
 }
 /*styling the content part*/
+#titleCont{
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px 3px 5px grey;
+}
 #commContent{
   background-color: rgba(253, 169, 81, .2);
   z-index: -2;
@@ -74,7 +79,7 @@ a.nav-link:hover{
   margin-left: 22vw;
 }
 #commContent p{
-  padding:0 20%;
+  padding:0 10% 2% 15%;
 }
 .card{
   margin: 2%;
@@ -110,28 +115,31 @@ a.nav-link:hover{
 }
 #coupleStress .card-body{
   background-image: url('../images/cipolestress.jpg');
-  background-size: 90%;
-  background-position: 100%;
+  background-size: 100%;
+  background-position: 50%;
 }
 #mindCleansing .card-body{
   background-image: url('../images/cleansingyourself.jpg');
-  background-size: 90%;
-  background-position: 100%;
+  background-size: 100%;
+  background-position: center;
 }
 #crashing .card-body{
   background-image: url('../images/crashingDown.jpg');
-  background-size: 90%;
-  background-position: 100%;
+  background-size: 100%;
+  background-position: 50%;
 }
 #isolation .card-body{
   background-image: url('../images/isolationAnxiety.jpg');
-  background-size: 90%;
-  background-position: 100%;
+  background-size: 100%;
+  background-position: 50%;
 }
 #strugglesWoman .card-body{
   background-image: url('../images/ladyBlack.jpeg');
-  background-size: 90%;
-  background-position: 100%;
+  background-size: 100%;
+  background-position: 50%;
+}
+nav>img:hover{
+  border-radius: 20px;
 }
 /*Arranging the whole page*/
 .community{
