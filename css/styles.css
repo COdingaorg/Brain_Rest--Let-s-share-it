@@ -18,6 +18,39 @@
   src: url('web-fonts/Montserrat/Montserrat-Light.otf');
   font-weight: lighter;
 }
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0px;
+}
 h1{
   font-family: PierSans;
+}
+p{
+  font-family: Monteserrat;
+}
+nav{
+  background-color: rgb(82, 41, 87);
+  width: 100%;
+}
+.btn{
+  background-color: rgb(253, 169, 81);
+  margin-right: 30px;
+  padding: 2px;
+  width: fit-content;
+}
+a.nav-link{
+  color: white;
+}
+a.nav-link:hover{
+  color: rgb(253, 169, 81);
+  text-decoration: underline;
+  font-size: large;
+}
+.navbar-toggler{
+  color: white;
 }
