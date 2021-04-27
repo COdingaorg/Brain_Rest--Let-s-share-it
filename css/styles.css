@@ -26,9 +26,11 @@
 body{
   margin: 0;
   padding: 0px;
+  width: 97.5vw;
 }
 h1{
   font-family: PierSans;
+  padding: 1%;
 }
 p{
   font-family: Monteserrat;
@@ -68,9 +70,10 @@ a.nav-link:hover{
 }
 .card{
   margin: 2%;
-  padding: 1px;
+  padding: 0;
   border-radius: 10px 10px 0 0;
-  border-radius: 2px solid white;
+  border: 2px solid white;
+  box-shadow: 3px 3px 5px gray;
 }
 .card-body{
   height: 160px;
@@ -81,6 +84,7 @@ a.nav-link:hover{
   height: 60px;
   background-color: black;
   border-radius: 0 0 5px 5px;
+  padding: 0;
 }
 #storiesBoard{
   box-sizing: border-box;
@@ -99,7 +103,7 @@ a.nav-link:hover{
   left: 0;
   top: 20vh;
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   padding: 2%;
   box-shadow: 0px 3px 5px gray;
   background-color: rgba(255, 255, 255, .7);
@@ -117,7 +121,7 @@ a.nav-link:hover{
 #sideBarcover{
   background-image: url('../images/Awareness.jpg');
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   width: 22vw;
   height: 150vh;
   top: 0vh;
