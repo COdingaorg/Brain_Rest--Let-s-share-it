@@ -54,3 +54,7 @@ a.nav-link:hover{
 .navbar-toggler{
   color: white;
 }
+/*styling the content part*/
+.card{
+  margin: 2%;
+}
