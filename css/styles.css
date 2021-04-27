@@ -28,6 +28,14 @@ body{
   padding: 0px;
   width: 97.5vw;
 }
+h2, h3, h4, h5, h6, p{
+  color: black;
+}
+hr{
+  box-shadow: 2px 3px 7px grey;
+  border: 1px solid black;
+  color: white;
+}
 h1{
   font-family: PierSans;
   padding: 1%;
@@ -73,7 +81,7 @@ a.nav-link:hover{
   padding: 0;
   border-radius: 10px 10px 0 0;
   border: 2px solid white;
-  box-shadow: 3px 3px 5px gray;
+  box-shadow: 1px 3px 5px gray;
 }
 .card-body{
   height: 160px;
@@ -81,15 +89,49 @@ a.nav-link:hover{
   border-radius: 10px 10px 0 0;
 }
 .card-title{
+  width: 100%;
   height: 60px;
-  background-color: black;
+  background-color: white;
   border-radius: 0 0 5px 5px;
-  padding: 0;
+  padding-top: 2px;
+  text-align: center;
+  line-height: 1em;
 }
 #storiesBoard{
   box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;  
+}
+/*adding images to cards*/
+#celebrateHealth .card-body{
+  background-image: url('../images/celebratingmentalHealth.jpg');
+  background-size: 90%;
+  background-position: 50%;
+}
+#coupleStress .card-body{
+  background-image: url('../images/cipolestress.jpg');
+  background-size: 90%;
+  background-position: 100%;
+}
+#mindCleansing .card-body{
+  background-image: url('../images/cleansingyourself.jpg');
+  background-size: 90%;
+  background-position: 100%;
+}
+#crashing .card-body{
+  background-image: url('../images/crashingDown.jpg');
+  background-size: 90%;
+  background-position: 100%;
+}
+#isolation .card-body{
+  background-image: url('../images/isolationAnxiety.jpg');
+  background-size: 90%;
+  background-position: 100%;
+}
+#strugglesWoman .card-body{
+  background-image: url('../images/ladyBlack.jpeg');
+  background-size: 90%;
+  background-position: 100%;
 }
 /*Arranging the whole page*/
 .community{
