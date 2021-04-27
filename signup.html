@@ -12,37 +12,39 @@
 
 <body>
   <div id="container">
-    <div id="signup">
-      <div id="leftDesc">
-        <div id="createText">
-          <span>Create Account</span>
-          <img src="images/avatarIcon.png" alt="signup" width="60px">
+    <div id="signupCont">
+      <div id="signup">
+        <div id="leftDesc">
+          <div id="createText">
+            <span>Create Account</span>
+            <img src="images/avatarIcon.png" alt="signup" width="40px">
+            <hr>
+          </div>
+          <div id="accntDesc">
+            <ul>
+              <p>You will be able to</p>
+              <li>share your story</li>
+              <li>comment on personal stories</li>
+              <li>send us a question</li>
+              <li>Suggest Edits to articles</li>
+              <li>Leave feedback</li>
+            </ul>
+          </div>
         </div>
-        <div id="accntDesc">
-          <p>
-            You will be able to <br>
-            share your story<br>
-            comment on personal stories<br>
-            send us a question<br>
-            Suggest Edits to articles<br>
-            Leave feedback
-            </nr>
-          </p>
+        <div id="rightDesc">
+          <form>
+            <label for="name">Name :</label>
+            <input type="text" id="userName" name="userName"><br>
+            <label for="name">Email :</label>
+            <input type="text" id="userEmail" name="userEmail"><br>
+            <label for="name">Password :</label>
+            <input type="password" id="userPassword" name="userPassword"><br>
+            <label for="name">Confirm Password :</label>
+            <input type="password" id="userPasswordConfirm" name="userPasswordConfirm"><br>
+            <button type="button" id="cancel" name="cancel" class="btn btn-warning">cancel</button>
+            <button type="submit" id="createAcc" name="createAcc" class="btn btn-success">Create</button>
+          </form>
         </div>
-      </div>
-      <div id="rightDesc">
-        <form>
-          <label for="name">Name :</label>
-          <input type="text" id="userName" name="userName"><br>
-          <label for="name">Email :</label>
-          <input type="text" id="userEmail" name="userEmail"><br>
-          <label for="name">Password :</label>
-          <input type="password" id="userPassword" name="userPassword"><br>
-          <label for="name">Confirm Password :</label>
-          <input type="password" id="userPasswordConfirm" name="userPasswordConfirm"><br>
-          <button type="button" id="cancel" name="cancel">cancel</button>
-          <button type="submit" id="createAcc" name="createAcc">Create</button>
-        </form>
       </div>
     </div>
   </div>

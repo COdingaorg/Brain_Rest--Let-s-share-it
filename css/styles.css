@@ -200,3 +200,53 @@ nav>img:hover{
   position: fixed;
   z-index: -1;
 }
+/*Styling the sign up page*/
+#signupCont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#signup{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/unwinding.jpg');
+  width: 50%;
+  padding: 30px;
+  border-radius: 8px;
+}
+#rightDesc{
+  text-align: right;
+  color: white;
+  border-left: 2px solid white;
+  margin-left: 40px;
+}
+input{
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+#signup button{
+  width: 80px;
+  border-radius: 5px;
+}
+
+#leftDesc{
+  background-color: rgba(255, 255, 255, .7);
+  padding: 3%;
+  border-radius: 5px;
+  border: 1px solid white;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#rightDesc input{
+  background-color: rgba(255, 255, 255, .7);
+  padding: 1%;
+  border-radius: 5px;
+  border: 1px solid white;
+  backdrop-filter: blur(4px);
+  border-left:1px solid white;
+}
