@@ -72,7 +72,7 @@ a.nav-link:hover{
   box-shadow: 1px 3px 5px gray;
   width: 75vw;
 }
-#commContent, #userStoriesPage{
+#commContent, #userStoriesPage,#story2,#story3,#story4{
   background-color: rgba(253, 169, 81, .2);
   z-index: -2;
   width:75vw;
@@ -80,7 +80,7 @@ a.nav-link:hover{
   margin-left: 22vw;
 }
 /*Styling the stories display pages*/
-#userStoriesPage{
+#userStoriesPage,#story2,#story3,#story4{
   width: 70vw;
   background-color: rgba(255, 255, 255, .7);
   padding: 2%;
