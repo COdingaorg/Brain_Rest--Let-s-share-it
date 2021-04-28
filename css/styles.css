@@ -70,14 +70,34 @@ a.nav-link:hover{
   background-color: white;
   padding-top: 1%;
   box-shadow: 1px 3px 5px gray;
+  width: 75vw;
 }
-#commContent{
+#commContent, #userStoriesPage{
   background-color: rgba(253, 169, 81, .2);
   z-index: -2;
-  width:80vw;
+  width:75vw;
   text-align: center;
   margin-left: 22vw;
 }
+/*Styling the stories display pages*/
+#userStoriesPage{
+  width: 70vw;
+  background-color: rgba(255, 255, 255, .7);
+  padding: 2%;
+  border-radius: 10px;
+  border: 2px solid white ;
+  backdrop-filter: blur(15px);
+  display: none;
+
+}
+#commContent{
+  position: absolute;
+}
+
+
+
+
+
 #commContent p{
   padding:0 10% 2% 15%;
 }
@@ -202,9 +222,13 @@ nav>img:hover{
 }
 /*Styling the sign up page*/
 #signupCont{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 50vw;
+ position: absolute;
+ left:8vw;
+ margin: 0;
+ box-sizing: border-box;
+ display: none;
+ z-index: 3;
 }
 #signup{
   display: flex;
@@ -212,10 +236,11 @@ nav>img:hover{
   justify-content: center;
   align-items: center;
   background-image: url('../images/unwinding.jpg');
-  width: 50%;
+  width: 100%;
   padding: 30px;
   border-radius: 8px;
   border:2px solid white;
+
 }
 #rightDesc{
   text-align: right;
@@ -255,4 +280,11 @@ input{
   color: black;
   font-family: Nexa;
   font-weight: lighter;
+}
+/* Styling footer */
+footer{
+  color: black;
+}
+footer a{
+  text-align: left;
 }

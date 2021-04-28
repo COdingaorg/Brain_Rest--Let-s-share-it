@@ -14,10 +14,9 @@
   <div class="container-md-fluid">
     <nav class="navbar navbar-expand-lg nav justify-content-end">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="images/smpleLogo1.png" alt="Brain Rest Logo"
-            height="70px"></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"><img src="images/smpleLogo1.png" alt="Brain Rest Logo" height="70px"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarNav">
@@ -32,31 +31,66 @@
               <a class="nav-link" href="communityPage.html">Community</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="signup.html">sign up</a>
+              <a class="nav-link" href="" id="signUpPage">sign up</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!--Sign Up Page-->
+      <div id="signupCont">
+        <div id="signup">
+          <div id="leftDesc">
+            <div id="createText">
+              <span>Create Account</span>
+              <img src="images/avatarIcon.png" alt="signup" width="40px">
+              <hr>
+            </div>
+            <div id="accntDesc">
+              <ul>
+                <p>You will be able to</p>
+                <li>share your story</li>
+                <li>comment on personal stories</li>
+                <li>send us a question</li>
+                <li>Suggest Edits to articles</li>
+                <li>Leave feedback</li>
+              </ul>
+            </div>
+          </div>
+          <div id="rightDesc">
+            <form>
+              <label for="name">Name :</label>
+              <input type="text" id="userName" name="userName"><br>
+              <label for="name">Email :</label>
+              <input type="text" id="userEmail" name="userEmail"><br>
+              <label for="name">Password :</label>
+              <input type="password" id="userPassword" name="userPassword"><br>
+              <label for="name">Confirm Password :</label>
+              <input type="password" id="userPasswordConfirm" name="userPasswordConfirm"><br>
+              <button type="button" id="cancel" name="cancel" class="btn btn-warning">cancel</button>
+              <button type="submit" id="createAcc" name="createAcc" class="btn btn-success">Create</button>
+            </form>
+          </div>
+        </div>
+        </div>
     <div class="community">
       <div id="sidebar">
         <div id="topStories">
           <img src="images/stories.png" alt="top Stories"><span>Top Stories</span>
           <ul>
-            <li><a href='#storiesBoard:nth-child(1)'>Understanding Yourself</a></li>
-            <li><a href='#storiesBoard:nth-child(1)'>Understanding Yourself</a></li>
-            <li><a href='#storiesBoard:nth-child(1)'>Understanding Yourself</a></li>
-            <li><a href='#storiesBoard:nth-child(1)'>Understanding Yourself</a></li>
-            <li><a href='#storiesBoard:nth-child(1)'>Understanding Yourself</a></li>
+            <li><a href='#story1' id="link1">Celebrating Mental Health</a></li>
+            <li><a href='#storiesBoard:nth-child(1)'' id="link1"'>Solving marital problems</a></li>
+            <li><a href='#storiesBoard:nth-child(1)'>Relieveing your brain</a></li>
+            <li><a href='#storiesBoard:nth-child(1)'>Struggles as a woman</a></li>
+            <li><a href='#storiesBoard:nth-child(1)'>Isolation makes it worse</a></li>
           </ul>
         </div>
         <div id="forums">
           <img src="images/network.png" alt="Forums"><span>Active Forums</span>
           <ul>
-            <li><a href="#">#TeenStrong</a></li>
-            <li><a href="#">#TeenStrong</a></li>
-            <li><a href="#">#TeenStrong</a></li>
-            <li><a href="#">#TeenStrong</a></li>
+            <li><a href="#forum1">#NOtoBullies</a></li>
+            <li><a href="#forum2">#DelaingWithDepression</a></li>
+
           </ul>
         </div>
         <div id="topCollaborators">
@@ -113,9 +147,38 @@
         </div>
       </div>
     </div>
+    <!--Website user story pages-->
+    <div id="userStoriesPage">
+      <div id="story1">
+        <h5>Mental Health And Wellbeing 2020 In Review | Everything You Need To Know</h5>
+        <p id="author">Anjali Sing</p>
+        <p class="theStory">
+          Year 2020!
+
+          This phrase is likely to bring different emotions to everyone. This year has definitely been a roller-coaster
+          ride for all in terms of emotions, finances, relationships, and mental health. The excitement of entering the
+          new year was soon replaced with apprehensive thoughts, worrisome thinking, fearful emotions, and feeling of
+          helplessness.
+
+          That is the reason why this year has seen a massive shift in how we view mental health. Today we are going to
+          see the year 2020 and mental health in the review. We also have a special section on how Calm Sage has
+          contributed its part during this most important year of mental wellness.
+
+          Mental Health and 2020: In Review
+          COVID-19 and Mental Health: 2020 in Review
+          Many research have been carried out to understand the impact of the pandemic on the mental health of an
+          individual. It was seen that both people diagnosed with COVID-19 and those who didn’t, experienced a negative
+          impact on their mental health. Some of the common mental issues that were linked with COVID-19 are anxiety,
+          depression, self-reported stress, disturbed sleep, phobias, and more.
+        </p>
+        <button id="closeStory" class="btn btn-warning">Close</button>
+      </div>
+    </div>
+
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
+
 </html>
