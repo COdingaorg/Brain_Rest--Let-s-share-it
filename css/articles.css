@@ -38,6 +38,7 @@ h1,h5 {
     color: black;
 }
 
+
 p {
     font-family: Monteserrat;
     color: black;
@@ -70,7 +71,12 @@ a.nav-link:hover {
 }
 
 .text-center {
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-right: 100%;
+
+}
+.text-center:hover{
+    color: rgb(253, 169, 81);
 }
 
 .articles {
@@ -83,4 +89,8 @@ a.nav-link:hover {
     height: 10%;
     border-radius: 5%;
     margin-bottom: 10%;
+}
+.card-img-top:hover{
+transform: scale(0.5);
+text-decoration: underline;
 }
