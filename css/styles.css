@@ -297,7 +297,7 @@ footer a{
   height: auto;
 }
 #forum1, #forum2{
-  /* display: none; */
+  display: none;
 }
 #close1, #close2{
   width: 50px;
