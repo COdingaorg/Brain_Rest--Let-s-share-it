@@ -297,7 +297,7 @@ footer a{
   height: auto;
 }
 #forum1, #forum2{
-  display: none;
+  /* display: none; */
 }
 #close1, #close2{
   width: 50px;
@@ -305,7 +305,7 @@ footer a{
   right: 10px;
   top: 120px;
 }
-#forumsPage form{
+#addComment1, #addComment2{
   width: 100vw;
   background-color: white;
   padding: 10px;
@@ -314,7 +314,7 @@ footer a{
   position: fixed;
   bottom: 0;
 }
-#forumsPage form input{
+#addComment1 input, #addComment2 input{
   height: 60px;
   background-color: rgba(253, 169, 81, .2);
   border: 1px solid grey;
@@ -333,7 +333,7 @@ footer a{
   width: 30vh;
   margin-top: 0;
 }
-#comments{
+.comments{
   display: flex;
   background-color: rgba(253, 169, 81, .2);
   padding: 5px;
@@ -345,7 +345,7 @@ footer a{
   z-index: 3;
   padding-bottom: 62px;
 }
-#comments p{
+.comments p{
   border: 1px solid white;
   margin: 1%;
   height: 100px;
@@ -362,19 +362,24 @@ footer a{
 #discussion{
   font-weight: bold;
 }
-#comments .readMore, #comments .replyTo{
+.comments .readMore, .comments .replyTo{
   width: fit-content;
   height: 30px;
   position: relative;
   background-color: rgba(253, 169, 81, .7);
+  cursor:progress;
 }
-#comments .readMore{
+.comments .readMore:hover, .comments .replyTo:hover{
+  font-size: 1em;
+  background-color: rgba(253, 169, 81, 1);
+}
+.comments .readMore{
   left: 0;
 }
-#comments .replyTo{
+.comments .replyTo{
   right: 0;
 }
-#comments .interaction{
+.comments .interaction{
   display: flex;
   flex-direction: row;
 }
