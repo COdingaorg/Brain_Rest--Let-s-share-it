@@ -215,6 +215,7 @@ nav>img:hover{
   width: 50%;
   padding: 30px;
   border-radius: 8px;
+  border:2px solid white;
 }
 #rightDesc{
   text-align: right;
@@ -249,4 +250,9 @@ input{
   border: 1px solid white;
   backdrop-filter: blur(4px);
   border-left:1px solid white;
+}
+#accntDesc li{
+  color: black;
+  font-family: Nexa;
+  font-weight: lighter;
 }
