@@ -1,0 +1,252 @@
+@font-face {
+  font-family: PierSans;
+  src: url('web-fonts/PierSans/PierSans-Bold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: Nexa;
+  src: url('web-fonts/Nexa/Nexa-Light.otf');
+  font-weight: lighter;
+}
+@font-face {
+  font-family: Monteserrat;
+  src: url('web-fonts/Montserrat/Montserrat-Medium.otf');
+  font-weight: medium;
+}
+@font-face {
+  font-family: Monteserrat;
+  src: url('web-fonts/Montserrat/Montserrat-Light.otf');
+  font-weight: lighter;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0px;
+  width: 97.5vw;
+}
+h2, h3, h4, h5, h6, p{
+  color: black;
+}
+hr{
+  box-shadow: 2px 3px 7px grey;
+  border: 1px solid black;
+  color: white;
+}
+h1{
+  font-family: PierSans;
+  padding-top: 2%;
+}
+p{
+  font-family: Monteserrat;
+}
+nav{
+  background-color: rgb(82, 41, 87);
+  width: 100%;
+  height: 15vh;
+}
+.btn{
+  background-color: rgb(253, 169, 81);
+  margin-right: 30px;
+  padding: 2px;
+  width: fit-content;
+}
+a.nav-link{
+  color: white;
+}
+a.nav-link:hover{
+  color: rgb(253, 169, 81);
+  text-decoration: underline;
+  font-size: large;
+}
+.navbar-toggler{
+  color: white;
+}
+/*styling the content part*/
+#titleCont{
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 1px 3px 5px gray;
+}
+#commContent{
+  background-color: rgba(253, 169, 81, .2);
+  z-index: -2;
+  width:80vw;
+  text-align: center;
+  margin-left: 22vw;
+}
+#commContent p{
+  padding:0 10% 2% 15%;
+}
+.card{
+  margin: 2%;
+  padding: 0;
+  border-radius: 10px 10px 0 0;
+  border: 2px solid white;
+  box-shadow: 1px 3px 5px gray;
+}
+.card-body{
+  height: 160px;
+  background-color: chocolate;
+  border-radius: 10px 10px 0 0;
+}
+.card-title{
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  padding-top: 2px;
+  text-align: center;
+  line-height: 1em;
+}
+#storiesBoard{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;  
+}
+/*adding images to cards*/
+#celebrateHealth .card-body{
+  background-image: url('../images/celebratingmentalHealth.jpg');
+  background-size: 90%;
+  background-position: 50%;
+}
+#coupleStress .card-body{
+  background-image: url('../images/cipolestress.jpg');
+  background-size: 100%;
+  background-position: 50%;
+}
+#mindCleansing .card-body{
+  background-image: url('../images/cleansingyourself.jpg');
+  background-size: 100%;
+  background-position: center;
+}
+#crashing .card-body{
+  background-image: url('../images/crashingDown.jpg');
+  background-size: 100%;
+  background-position: 50%;
+}
+#isolation .card-body{
+  background-image: url('../images/isolationAnxiety.jpg');
+  background-size: 100%;
+  background-position: 50%;
+}
+#strugglesWoman .card-body{
+  background-image: url('../images/ladyBlack.jpeg');
+  background-size: 100%;
+  background-position: 50%;
+}
+nav>img:hover{
+  border-radius: 20px;
+}
+/*Arranging the whole page*/
+.community{
+  display: flex;
+  flex-direction: row;
+}
+#sidebar{
+  width: 20vw;
+  height: auto;
+  position: fixed;
+  left: 0;
+  top: 20vh;
+  border: 1px solid white;
+  border-radius: 0 10px 10px 0;
+  padding: 1%;
+  box-shadow: 0px 3px 5px gray;
+  background-color: rgba(255, 255, 255, .7);
+  backdrop-filter: blur(5px);
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+}
+#sidebar img{
+  width: 15%;
+}
+#sidebar a{
+  color:rgb(82, 41, 87);
+  text-decoration-line: none;
+  border-radius: 5px;
+  border: 1px solid white;
+  box-shadow: 1px 3px 5px gray;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2%;
+}
+#sidebar li{
+  margin: 10px;
+  list-style-type: disc;
+}
+#sidebar a:hover{
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 3%;
+  border-radius: 5px;
+  border: 1px solid white;
+  box-shadow: 1px 3px 5px gray;
+}
+#sidebar span{
+  font-size: 1.3em;
+  margin-left: 2%;
+  color: black;
+}
+#sideBarcover{
+  background-image: url('../images/Awareness.jpg');
+  background-size: contain;
+  background-repeat: repeat-y;
+  width: 22vw;
+  height: 150vh;
+  top: 0vh;
+  position: fixed;
+  z-index: -1;
+}
+/*Styling the sign up page*/
+#signupCont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#signup{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/unwinding.jpg');
+  width: 50%;
+  padding: 30px;
+  border-radius: 8px;
+}
+#rightDesc{
+  text-align: right;
+  color: white;
+  border-left: 2px solid white;
+  margin-left: 40px;
+}
+input{
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+#signup button{
+  width: 80px;
+  border-radius: 5px;
+}
+
+#leftDesc{
+  background-color: rgba(255, 255, 255, .7);
+  padding: 3%;
+  border-radius: 5px;
+  border: 1px solid white;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#rightDesc input{
+  background-color: rgba(255, 255, 255, .7);
+  padding: 1%;
+  border-radius: 5px;
+  border: 1px solid white;
+  backdrop-filter: blur(4px);
+  border-left:1px solid white;
+}

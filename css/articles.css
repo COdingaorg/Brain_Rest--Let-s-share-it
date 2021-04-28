@@ -1,0 +1,96 @@
+@font-face {
+    font-family: PierSans;
+    src: url('web-fonts/PierSans/PierSans-Bold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Nexa;
+    src: url('web-fonts/Nexa/Nexa-Light.otf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: Monteserrat;
+    src: url('web-fonts/Montserrat/Montserrat-Medium.otf');
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: Monteserrat;
+    src: url('web-fonts/Montserrat/Montserrat-Light.otf');
+    font-weight: lighter;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* margin: 0;
+    padding: 0px; */
+}
+
+h1,h5 {
+    font-family: PierSans;
+    color: black;
+}
+
+
+p {
+    font-family: Monteserrat;
+    color: black;
+}
+
+nav {
+    background-color: rgb(82, 41, 87);
+    width: 100%;
+}
+
+.btn {
+    background-color: rgb(253, 169, 81);
+    margin-right: 30px;
+    padding: 2px;
+    width: fit-content;
+}
+
+a.nav-link {
+    color: white;
+}
+
+a.nav-link:hover {
+    color: rgb(253, 169, 81);
+    text-decoration: underline;
+    font-size: large;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+.text-center {
+    margin-top: 10px;
+    margin-right: 100%;
+
+}
+.text-center:hover{
+    color: rgb(253, 169, 81);
+}
+
+.articles {
+    margin-right: 2% auto;
+    width: 80%;
+    margin-left: 10%;
+    height: fit-content;
+}
+.card-body{
+    height: 10%;
+    border-radius: 5%;
+    margin-bottom: 10%;
+}
+.card-img-top:hover{
+transform: scale(0.5);
+text-decoration: underline;
+}
