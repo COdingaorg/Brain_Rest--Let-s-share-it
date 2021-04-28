@@ -22,5 +22,25 @@ $(document).ready(function (event) {
   $('#comments .readMore').click(function(event){
     event.preventDefault();
     $('#comment1 p').first().css('overflow','show')
-  })  
+  })
+  $('#sidebarButton').click(function(event){
+    event.preventDefault();
+    $('#sidebar').toggle();
+  })
+  $('#close1').click(function(event){
+    event.preventDefault();
+    $('#forum1').hide();
+  })
+  $('#close2').click(function(event){
+    event.preventDefault();
+    $('#forum2').hide();
+  })
+  $('#forum1Link').click(function(event){
+    event.preventDefault();
+    $('#forum1').show();
+  })
+  $('#forum2Link').click(function(event){
+    event.preventDefault();
+    $('#forum2').show();
+  })
 })
