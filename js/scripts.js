@@ -1,7 +1,9 @@
 //business Logic
+//user object construct
 
 //User Logic
 $(document).ready(function (event) {
+  //create a user object
   $('#celebrateHealth, #link1').click(function (event) {
     event.preventDefault()
 
