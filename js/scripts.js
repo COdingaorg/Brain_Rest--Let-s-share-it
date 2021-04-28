@@ -36,6 +36,22 @@ $(document).ready(function (event) {
   $('#closeStory4').click(function () {
     $('#story4').hide()
   })
+  // user story 5
+  $('#isolation, #link5').click(function(event){
+    event.preventDefault()
+    $('#story5').show()
+  })
+  $('#closeStory5').click(function () {
+    $('#story5').hide()
+  })
+  // user story 6
+  $('#strugglesWoman, #link6').click(function(event){
+    event.preventDefault()
+    $('#story6').show()
+  })
+  $('#closeStory6').click(function () {
+    $('#story6').hide()
+  })
   // signup page.
   $('#signUpPage').click(function(event){
     event.preventDefault()
