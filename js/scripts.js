@@ -1,7 +1,7 @@
 //business Logic
 //user object construct
-var User = function(name, email, password){
-  this.UserName = name;
+var User = function(username, email, password){
+  this.UserName = username;
   this.UserEmail = email;
   this.UserPassword = password;
   this.webName = [];
@@ -9,6 +9,17 @@ var User = function(name, email, password){
 User.prototype.webName = Math.random();
 //User Logic
 $(document).ready(function (event) {
+  $('#rightDesc form').submit(function(){
+    var username = $('input #userName').val();
+    var email= $('input #userEmail').val();
+    var password = $('input #userPassword').val();
+
+    var user1 = new User(username, email, password)
+    $('#profilecard h1').text(user1.username);
+    $('#profilecard #email').text(user1.UserEmail);               
+  })
+    //create user object
+    
 
   // user story one.
   $('#celebrateHealth, #link1').click(function (event) {
