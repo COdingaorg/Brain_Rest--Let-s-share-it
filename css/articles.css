@@ -37,6 +37,11 @@ h1,h5 {
     font-family: PierSans;
     color: black;
 }
+hr {
+  box-shadow: 2px 3px 7px grey;
+  border: 1px solid black;
+  color: white;
+}
 
 
 p {
@@ -73,7 +78,11 @@ a.nav-link:hover {
 .text-center {
     margin-top: 10px;
     margin-right: 100%;
+    color: rgb(82, 41, 87);
 
+}
+.card mb-2{
+  height: 10%;
 }
 .text-center:hover{
     color: rgb(253, 169, 81);
