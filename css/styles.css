@@ -97,14 +97,12 @@ a.active{
   width: 75vw;
   background-color: rgba(255, 255, 255, 1) ;
 }
-#commContent, #userStoriesPage,#story2,#story3,#story4,#story5,#story6 ,#titleCont{
- 
+#commContent,#story2,#story3,#story4,#story5,#story6 ,#titleCont{
   padding-top: 1%;
   box-shadow: 1px 3px 5px gray;
   width: 75vw;
   background-color: rgba(255, 255, 255, 1);
 }
-
 #commContent,
 #story1,
 #story2,
@@ -112,25 +110,31 @@ a.active{
 #story4,
 #story5,
 #story6 {
-  background-color: rgba(253, 169, 81, .2);
   width: 75vw;
   text-align: center;
-  margin-left: 22vw;
 }
-
-/*Styling the stories display pages*/
-#userStoriesPage,#story2,#story3,#story4,#story5,#story6{
+#commContent{
   margin-left: 22vw;
+  background-color: rgba(253, 169, 81, .2);
+  z-index: -3;
+}
+/*Styling the stories display pages*/
+#story1,#story2,#story3,#story4,#story5,#story6{
   width: 70vw;
   background-color: rgba(255, 255, 255, .7);
-  padding: 2%;
+  padding: 10px;
   border-radius: 10px;
   border: 2px solid white;
   backdrop-filter: blur(15px);
   z-index: 5;
-
+  display: none;
 }
-
+#userStoriesPage{
+  margin-left: 22vw;
+  width: 70vw;
+  padding: 2%;
+  background-color: rgba(255, 255, 255, 0);
+}
 #commContent {
   position: absolute;
 }
@@ -144,11 +148,11 @@ a.active{
   border-radius: 10px 10px 0 0;
   border: 2px solid white;
   box-shadow: 1px 3px 5px gray;
+  z-index: -2;
 }
 
 .card-body {
   height: 160px;
-  background-color: chocolate;
   border-radius: 10px 10px 0 0;
 }
 
@@ -166,7 +170,7 @@ a.active{
   box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
-  z-index: -1;
+  z-index: -3;
 }
 
 /*adding images to cards*/
@@ -366,20 +370,13 @@ footer a {
 /*Styling forums Page*/
 #forumsPage{
   background-color: white;
-  z-index: 6;
+  z-index: 3;
   width:75vw;
   text-align: left;
   margin-left: 22vw;
   height: auto;
+  margin-top: -2%;
 }
-#forum1, #forum2{
-  display: none;
-}
-#close1, #close2{
-  margin-left: 22vw;
-  height: auto;
-}
-
 #forum1,
 #forum2 {
   display: none;
@@ -415,10 +412,6 @@ footer a {
   padding-top: 1%;
   width: 75vw;
 }
-.forumTitle p img{
-
-}
-
 .forumTitle p img {
   float: right;
   width: 30vh;
@@ -434,7 +427,7 @@ footer a {
   justify-content: space-evenly;
   overflow: scroll;
   height: auto;
-  z-index: 3;
+  z-index: 4;
   padding-bottom: 62px;
 }
 
