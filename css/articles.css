@@ -182,8 +182,10 @@ input {
 /* Styling footer */
 footer {
   color: black;
+ margin-left: 50%;
 }
 
 footer a {
-  text-align: left;
+ 
+  text-align: center;
 }
