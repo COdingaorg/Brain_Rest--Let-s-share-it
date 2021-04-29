@@ -1,6 +1,12 @@
 //business Logic
 //user object construct
-
+var User = function(name, email, password){
+  this.UserName = name;
+  this.UserEmail = email;
+  this.UserPassword = password;
+  this.webName = [];
+}
+User.prototype.webName = Math.random();
 //User Logic
 $(document).ready(function (event) {
 

@@ -28,11 +28,6 @@
   box-sizing: border-box;
 }
 
-body {
-  /* margin: 0;
-    padding: 0px; */
-}
-
 h1,
 h5 {
   font-family: PierSans;
@@ -101,25 +96,22 @@ a.nav-link:hover {
 }
 
 .articles {
-  margin-right: 2% auto;
-  width: 80%;
-  margin-left: 10%;
+  padding:5%;
+  width: 100%;
   height: fit-content;
-  background-color: rgba(253, 169, 81, .2);
+  background-color: #ffffff;
 
 }
-
-.card-body {
-  height: 10%;
-  border-radius: 5%;
-  margin-bottom: 10%;
-}
-
 .card-img-top:hover {
   transform: scale(0.5);
   text-decoration: underline;
 }
-
+.card-group{
+  height: 80vh;
+}
+.card-body{
+  height: 100%;
+}
 /*Styling the sign up page*/
 #signupCont {
   width: 50vw;
