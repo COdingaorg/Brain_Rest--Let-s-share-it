@@ -32,11 +32,20 @@ h1,h5 {
   font-family: PierSans;
   color: black;
 }
+
+a.navbar-brand{
+  margin-right: -20px;
+}
+a.active{
+  margin-right: -28px;
+}
+
 hr {
   box-shadow: 2px 3px 7px grey;
   border: 1px solid black;
   color: white;
 }
+
 
 
 p {
