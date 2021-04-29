@@ -29,7 +29,6 @@ $(document).ready(function (event) {
   })
   //toggling user story
   $('#closeStory').click(function () {
-    $('#userStoriesPage').hide()
     $('#story1').hide()
 
   })

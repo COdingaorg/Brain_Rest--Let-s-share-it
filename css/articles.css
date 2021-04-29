@@ -28,11 +28,11 @@
   box-sizing: border-box;
 }
 
-h1,h5 {
+h1,
+h5 {
   font-family: PierSans;
   color: black;
 }
-
 a.navbar-brand{
   margin-right: -20px;
 }
@@ -45,9 +45,6 @@ hr {
   border: 1px solid black;
   color: white;
 }
-
-
-
 p {
   font-family: Monteserrat;
   color: black;
@@ -83,7 +80,7 @@ a.nav-link:hover {
   background-color: rgba(253, 169, 81, .2);
   z-index: 2;
   width:75vw;
-  text-align: center;
+  textgt-align: center;
   margin-left: 22vw;
 }
 /*Styling the stories display pages*/
@@ -99,16 +96,13 @@ a.nav-link:hover {
 /* } * */
 
 .text-center {
-    margin-top: 10px;
-    margin-right: 100%;
-    color: rgb(82, 41, 87);
+  margin-top: 10px;
+  margin-right: 100%;
 
 }
-.card mb-2{
-  height: 10%;
-}
-.text-center:hover{
-    color: rgb(253, 169, 81);
+
+.text-center:hover {
+  color: rgb(253, 169, 81);
 }
 
 .articles {
@@ -130,66 +124,74 @@ a.nav-link:hover {
 }
 /*Styling the sign up page*/
 #signupCont{
-    width: 50vw;
-   position: absolute;
-   left:8vw;
-   margin: 0;
-   box-sizing: border-box;
-   display: none;
-   z-index: 3;
-  }
-  #signup{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../images/unwinding.jpg');
-    width: 100%;
-    padding: 30px;
-    border-radius: 8px;
-    border:2px solid white;
-  
-  }
-  #rightDesc{
-    text-align: right;
-    color: white;
-    border-left: 2px solid white;
-    margin-left: 40px;
-  }
-  input{
-    margin-bottom: 15px;
-    border-radius: 5px;
-  }
-  #signup button{
-    width: 80px;
-    border-radius: 5px;
-  }
-  
-  #leftDesc{
-    background-color: rgba(255, 255, 255, .7);
-    padding: 3%;
-    border-radius: 5px;
-    border: 1px solid white;
-    backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  #rightDesc input{
-    background-color: rgba(255, 255, 255, .7);
-    padding: 1%;
-    border-radius: 5px;
-    border: 1px solid white;
-    backdrop-filter: blur(4px);
-    border-left:1px solid white;
-  }
-  #accntDesc li{
-    color: black;
-    font-family: Nexa;
-    font-weight: lighter;
-  }
-  /* Styling footer */
+  width: 50vw;
+  position: absolute;
+  left: 8vw;
+  margin: 0;
+  box-sizing: border-box;
+  display: none;
+  z-index: 3;
+}
+
+#signup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/unwinding.jpg');
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  border: 2px solid white;
+
+}
+
+#rightDesc {
+  text-align: right;
+  color: white;
+  border-left: 2px solid white;
+  margin-left: 40px;
+}
+
+input {
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+#signup button {
+  width: 80px;
+  border-radius: 5px;
+}
+
+#leftDesc{
+  background-color: rgba(255, 255, 255, .7);
+  padding: 3%;
+  border-radius: 5px;
+  border: 1px solid white;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#rightDesc input {
+  background-color: rgba(255, 255, 255, .7);
+  padding: 1%;
+  border-radius: 5px;
+  border: 1px solid white;
+  backdrop-filter: blur(4px);
+  border-left: 1px solid white;
+}
+
+#accntDesc li {
+  color: black;
+  font-family: Nexa;
+  font-weight: lighter;
+}
+
+/* Styling footer */
+
   footer {
     color:white;
     text-align: center;
@@ -203,8 +205,9 @@ a.nav-link:hover {
     font-size: 1.5rem;
     padding: 3%;
   }
-  /* footer p{
-    text-align: center
-    
-    
-  } */
+
+}
+
+footer a {
+  text-align: left;
+}
