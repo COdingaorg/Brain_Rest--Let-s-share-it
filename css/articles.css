@@ -28,8 +28,7 @@
   box-sizing: border-box;
 }
 
-h1,
-h5 {
+h1,h5 {
   font-family: PierSans;
   color: black;
 }

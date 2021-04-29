@@ -1,7 +1,7 @@
 //business Logic
 //user object construct
-var User = function(name, email, password){
-  this.UserName = name;
+var User = function(username, email, password){
+  this.UserName = username;
   this.UserEmail = email;
   this.UserPassword = password;
   this.webName = [];
@@ -9,6 +9,17 @@ var User = function(name, email, password){
 User.prototype.webName = Math.random();
 //User Logic
 $(document).ready(function (event) {
+  $('#rightDesc form').submit(function(){
+    var username = $('input #userName').val();
+    var email= $('input #userEmail').val();
+    var password = $('input #userPassword').val();
+
+    var user1 = new User(username, email, password)
+    $('#profilecard h1').text(user1.username);
+    $('#profilecard #email').text(user1.UserEmail);               
+  })
+    //create user object
+    
 
   // user story one.
   $('#celebrateHealth, #link1').click(function (event) {
@@ -70,12 +81,29 @@ $(document).ready(function (event) {
     event.preventDefault()
     $('#signupCont').hide()
   })
-  //readmore button opening the entire content of comment p
-  $('.comments p').after('<div class="interaction"><p class="readMore">Read More...</p><p class="replyTo">&downdownarrows;Reply</p></div><hr>');
-  $('.comments .readMore').click(function (event) {
+  //sharing users view on the discussion
+  $('form#addComment1 .shareButton').click(function(event){
     event.preventDefault();
-    $('.comment1 p').first().css('overflow', 'show')
-  })
+  var comment = $('#addComment1 input').val();
+    $('.comments').prepend("<p id='comment9'>"+comment+"</p>");
+    $('form#addComment1').reset();
+})
+$('form#addComment2 .shareButton').click(function(event){
+  event.preventDefault();
+var comment = $('#addComment2 input').val();
+  $('.comments').prepend("<p id='comment9'>"+comment+"</p>");
+  $('form#addComment2').reset();
+})
+//readmore button opening the entire content of comment p
+$('.comments p').after('<div class="interaction"><p class="readMore">Read More...</p><p class="replyTo">&downdownarrows;Reply</p></div><hr>');
+$('.readMore').click(function (event) {
+  event.preventDefault();
+  $('#comment1 p').first().css('height', '60vh')
+})
+$('.readMore').click(function (event) {
+  event.preventDefault();
+  $('.comment1 p').first().css('height', '60vh')
+})
   //adding replies to comments
   $('.replyTo').click(function(event){
     event.preventDefault()
@@ -87,6 +115,7 @@ $(document).ready(function (event) {
       event.preventDefault();
       var Replys = '<p id="Replys">'+$('form#userReply input').val()+'</p>';
       $('#comment1 p').first().append(Replys)
+      $('.comment1 p').first().append(Replys)
       $('form#userReply').hide();
       $('#comment1 p').first().css('overflow', 'auto')
     })
@@ -115,7 +144,9 @@ $(document).ready(function (event) {
   //sharing users view on the discussion
   $('form#addComment1 .shareButton').click(function(event){
     event.preventDefault();
-  var comment = $('input #userComment1').val();
-    $('.comments').css('background-color','green')
+  var comment = $('#addComment1 input').val();
+  console.log(comment)
+    $('.comments').prepend("<p id='comment9'>"+comment+"</p>");
+    $('#addComment1').reset();
 })
 })
