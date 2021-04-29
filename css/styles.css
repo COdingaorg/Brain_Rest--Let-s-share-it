@@ -18,6 +18,7 @@
   src: url('web-fonts/Montserrat/Montserrat-Light.otf');
   font-weight: lighter;
 }
+
 *{
   margin: 0px;
   padding: 0px;
@@ -45,8 +46,6 @@ p{
 }
 nav{
   background-color: rgb(82, 41, 87);
-  width: 100%;
-  height: 15vh;
 }
 .btn{
   background-color: rgb(253, 169, 81);
@@ -62,17 +61,18 @@ a.nav-link:hover{
   text-decoration: underline;
   font-size: large;
 }
-.navbar-toggler{
+button.navbar-toggler{
   color: white;
+  border: 2px solid white;
 }
 /*styling the content part*/
 #titleCont{
-  background-color: white;
   padding-top: 1%;
   box-shadow: 1px 3px 5px gray;
   width: 75vw;
+  background-color: rgba(255, 255, 255, 1) ;
 }
-#commContent, #userStoriesPage{
+#commContent, #userStoriesPage,#story2,#story3,#story4,#story5,#story6{
   background-color: rgba(253, 169, 81, .2);
   z-index: -2;
   width:75vw;
@@ -80,7 +80,7 @@ a.nav-link:hover{
   margin-left: 22vw;
 }
 /*Styling the stories display pages*/
-#userStoriesPage{
+#userStoriesPage,#story2,#story3,#story4,#story5,#story6{
   width: 70vw;
   background-color: rgba(255, 255, 255, .7);
   padding: 2%;
@@ -93,11 +93,6 @@ a.nav-link:hover{
 #commContent{
   position: absolute;
 }
-
-
-
-
-
 #commContent p{
   padding:0 10% 2% 15%;
 }
@@ -125,7 +120,8 @@ a.nav-link:hover{
 #storiesBoard{
   box-sizing: border-box;
   display: flex;
-  justify-content: space-evenly;  
+  justify-content: space-evenly; 
+  z-index: -1; 
 }
 /*adding images to cards*/
 #celebrateHealth .card-body{
@@ -284,7 +280,146 @@ input{
 /* Styling footer */
 footer{
   color: black;
+  width: 98vw;
 }
 footer a{
   text-align: left;
+}
+.navbar-toggler-icon{
+  z-index: 4;
+}
+/*Styling forums Page*/
+#forumsPage{
+  background-color: white;
+  z-index: 4;
+  width:75vw;
+  text-align: left;
+  margin-left: 22vw;
+  height: auto;
+}
+#forum1, #forum2{
+  display: none;
+}
+#close1, #close2{
+  width: 50px;
+  position: fixed;
+  right: 10px;
+  top: 120px;
+}
+#addComment1, #addComment2{
+  width: 100vw;
+  background-color: white;
+  padding: 10px;
+  color: black;
+  font-family: PierSans;
+  position: fixed;
+  bottom: 0;
+}
+#addComment1 input, #addComment2 input{
+  height: 60px;
+  background-color: rgba(253, 169, 81, .2);
+  border: 1px solid grey;
+  backdrop-filter: blur(5px);
+  box-shadow: 1px 3px 5px gray;
+  margin-right: 3px;
+  font-family: Nexa;
+  text-overflow: ellipsis;
+}
+.forumTitle{
+  padding-top: 1%;
+  width: 75vw;
+}
+.forumTitle p img{
+  float: right;
+  width: 30vh;
+  margin-top: 0;
+}
+.comments{
+  display: flex;
+  background-color: rgba(253, 169, 81, .2);
+  padding: 5px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: scroll;
+  height: auto;
+  z-index: 3;
+  padding-bottom: 62px;
+}
+.comments p{
+  border: 1px solid white;
+  margin: 1%;
+  height: 100px;
+  overflow: hidden;
+  width: 340px;
+  padding: 2%;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  font-size: 0.8em;
+  font-family: Nexa;
+  text-overflow: ellipsis;
+}
+#discussion{
+  font-weight: bold;
+}
+.comments .readMore, .comments .replyTo{
+  width: fit-content;
+  height: 30px;
+  position: relative;
+  background-color: rgba(253, 169, 81, .7);
+  cursor:progress;
+}
+.comments .readMore:hover, .comments .replyTo:hover{
+  font-size: 1em;
+  background-color: rgba(253, 169, 81, 1);
+}
+.comments .readMore{
+  left: 0;
+}
+.comments .replyTo{
+  right: 0;
+}
+.comments .interaction{
+  display: flex;
+  flex-direction: row;
+}
+/*Responsive for smaller screens*/
+@media screen and (max-width:750px){
+  #commContent, #userStoriesPage{
+    margin-left: 2vw;
+  }
+  #forumsPage{
+    margin-left: 2vw;
+    height: auto;
+    width: 98vw;
+}
+#sidebarButton{
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  background-color: black;
+  color: white;
+  padding: 3px;
+  width: 10vw;
+  position: fixed;
+  top: 30vh;
+  left: -1vw;
+  border-radius: 0 5px 5px 0;
+  z-index: 5;
+}
+#sidebarButton:hover{
+  font-size: 1.2em;
+}
+#sidebar{
+  width: 40vw;
+  font-size: .8em;
+  z-index: 5;
+  display: none;
+}
+#sideBarcover{
+  display: none;
+}
+body{
+  width:98vw;
+}
 }
