@@ -32,7 +32,12 @@ h1,h5 {
   font-family: PierSans;
   color: black;
 }
-
+a.navbar-brand{
+  margin-right: -20px;
+}
+a.active{
+  margin-right: -28px;
+}
 
 p {
   font-family: Monteserrat;
