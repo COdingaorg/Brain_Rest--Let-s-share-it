@@ -25,11 +25,12 @@ $(document).ready(function (event) {
   $('#celebrateHealth, #link1').click(function (event) {
     event.preventDefault()
 
-    $('#userStoriesPage').show()
+    $('#story1').show()
   })
   //toggling user story
   $('#closeStory').click(function () {
     $('#userStoriesPage').hide()
+    $('#story1').hide()
 
   })
   // user story 2.
